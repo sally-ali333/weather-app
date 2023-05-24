@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>Weather</title>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--bootstrap css file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--fontawsome css file-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--main stylesheet file-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--start navbar section-->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
+                    <img src="image/logo.png" alt="logo">
+                    <div class="text">
+                        <h1 class="text-white">Weather</h1>
+                        <p>tagline goes here</p>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar section-->
+
+    <!--start home section-->
+    <section id="home">
+        <div class="container">
+            <form action="">
+                <input type="text" placeholder="find your loction" id="search">
+                <button value="find">Find</button>
+            </form>
+        </div>
+    </section>
+    <!--end home section-->
+
+    <!--start weather table section-->
+    <section class="weather-table">
+        <div class="container">
+            <div class="weather-content">
+                <div class="row g-0" id="weather">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end weather table section-->
+
+    <!--start footer section-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <form action="">
+                        <input type="text" placeholder="ُEnter your Email to subscribe">
+                        <button value="subscribe">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i> </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i> </a>
+                        <a href="https://www.google.com/" target="_blank">
+                            <i class="fa-brands fa-google-plus-g"></i> </a>
+                        <a href="https://www.pinterest.com/" target="_blank">
+                            <i class="fa-brands fa-pinterest-p"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+    <!--end footer section-->
+
+    <!--bootstrap js file-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>

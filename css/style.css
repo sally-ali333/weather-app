@@ -1,0 +1,272 @@
+:root {
+    --text-color: #bfc1c8;
+    --main-color: #009ad8;
+    --background-color: #262936;
+    --body-background: #1e202b;
+    --main-transition: 0.5s all;
+}
+
+body {
+    font-family: "Roboto", "Open Sans", sans-serif;
+    background-color: var(--body-background);
+}
+
+/*start navbar section*/
+nav .text {
+    margin: 20px 0 0 10px;
+}
+
+nav h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+nav p {
+    font-size: 0.7rem;
+    color: var(--text-color);
+}
+
+nav .navbar-toggler {
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 40px;
+    outline: none;
+    transition: var(--main-transition);
+}
+
+nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+nav .navbar-toggler:hover {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+nav ul li {
+    font-size: 14px;
+}
+
+@media screen and (min-width:992px) {
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a.nav-link {
+        transition: var(--main-transition);
+        border: 2px solid transparent;
+        border-radius: 30px;
+        padding: 5px 25px !important;
+    }
+
+    nav ul li a.nav-link:not(.active):hover,
+    .navbar-nav .nav-link.active {
+        border: 2px solid var(--main-color);
+        color: var(--main-color);
+    }
+}
+
+@media screen and (max-width:991px) {
+    nav ul .nav-item .nav-link {
+        padding: 20px 0;
+    }
+
+    nav ul li:not(:last-child) a.nav-link {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-nav .nav-link.active {
+        color: var(--main-color)
+    }
+
+    nav .navbar-nav {
+        background-color: var(--background-color);
+        border-radius: 10px;
+    }
+}
+
+/*end navbar section*/
+
+/*start home section*/
+#home {
+    background-image: url(../image/banner.png);
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+}
+
+#home form {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+
+#home form input {
+    width: 100%;
+    padding: 15px 40px;
+    background-color: var(--body-background);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+
+#home form button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/*end home section*/
+
+
+/*start weather-table section*/
+.weather-table .weather-content {
+    background-color: #323544;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    color: var(--text-color);
+}
+
+.weather-table .weather-content .header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.weather-table .weather-content .weather-desc {
+    color: var(--main-color);
+    margin: 20px 0;
+}
+
+.weather-table .weather-content .weather-footer span {
+    margin-right: 20px;
+}
+
+.weather-table .weather-content .weather-footer span img {
+    margin-right: 5px;
+}
+
+.weather-table .weather-content .col-lg-4:nth-child(2) {
+    background-color: var(--background-color);
+}
+
+/*end weather-table section*/
+
+
+/*start footer section*/
+footer {
+    background-color: var(--background-color);
+    padding: 50px 0;
+}
+
+footer form {
+    position: relative;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+footer form input {
+    width: 100%;
+    padding: 15px 40px;
+    background-color: var(--body-background);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+}
+
+footer form button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--body-background);
+    color: var(--main-color);
+    text-align: center;
+    line-height: 2;
+    transition: var(--main-transition);
+    font-size: 20px;
+}
+
+footer .social-icons a:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+footer p {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+/*end footer section*/
+
+
+/*contact.html*/
+
+/* start header section*/
+#contact-header .content {
+    background-color: var(--background-color);
+    border-radius: 40px;
+    padding: 20px 30px;
+    font-size: 0.9285714286em;
+}
+
+/*end header section*/
+
+
+/*start main content section*/
+#main-content .contact-details {
+    background-color: var(--background-color);
+    border-radius: 10px;
+
+}
+
+#main-content p {
+    color: var(--text-color);
+    margin: 0 !important;
+}
+
+#main-content i {
+    color: var(--main-color);
+}
+
+#main-content .space {
+    height: 200px;
+}
+
+#main-content input,
+#main-content textarea {
+    background-color: var(--body-background);
+    border-radius: 20px;
+    color: var(--text-color) !important;
+}
+
+#main-content ::placeholder {
+    color: var(--text-color) !important;
+    font-size: 14px;
+}
+
+/*end main content section*/
